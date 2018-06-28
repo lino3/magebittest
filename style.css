@@ -1,0 +1,244 @@
+body{
+	width:1360px;
+	height:800px;
+    margin: 0px;
+    padding: 0px;
+    background: url(images/Background.png);
+	z-index: 1;
+}
+#box{
+	width: 920px;
+    height: 420px;
+    background-color:  rgba(15, 26, 47, 0.9);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#main{
+    height: 460px;
+    width: 460px;
+    background-color:  #ffffff;
+    box-shadow: 0px 0px 140px 0px rgba(50, 66, 91, 0.3);
+    position: absolute;
+    top:50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+#bdfolds{
+	position: absolute;
+	left: -10px;
+}
+#loginform,#signupform{
+    position: absolute;
+    top:50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+}
+#signupform{
+    top:45%;
+    left: 75%;
+    opacity: 0;
+	z-index: -1;
+}
+#loginform h1,#signupform h1{
+    font-family: 'Source Sans Pro';
+    color:  #3e495e;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 0.56px;
+    line-height: 35px;
+    text-align: left;
+}
+#underline{
+	background-color: #49abfe;
+    width: 40px;
+    height: 2px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+#login_btnform,#signup_btnform{
+	background-color:#f89a35;
+    font-size: 13px;
+    letter-spacing: 1.56px;
+    color:white;
+    border: none;
+    outline: none;
+	line-height: 35px;
+    border-radius: 50px;
+	cursor: pointer;
+}
+#signup_btnform{
+	z-index: -1;
+}
+#signup_btn{
+    height: 50px;
+    width: 140px;
+    background-color:  rgba(73, 171, 254, 0);
+    color: white;
+    border-width: 2px;
+    border-radius: 50px;
+	border-color: #49abfe;
+	border-style: solid;
+	outline: none;
+    position: absolute;
+    left: 80px;
+    top: 296px;
+    transition: all .3s;
+}
+#login_btn{
+    height: 50px;
+    width: 140px;
+    background-color:  rgba(73, 171, 254, 0);
+    color: white;
+    border-width: 2px;
+    border-radius: 50px;
+	border-color: #49abfe;
+	border-style: solid;
+	outline: none;
+    position: absolute;
+    right: 220px;
+    bottom: 105px;
+    transition: all .3s;
+}
+#forgot{
+	height: 50px;
+	width: 15px;
+	font-family: 'Source Sans Pro';
+    color:  #8495b7;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    line-height: 45px;
+	position: absolute;
+	right: 40px;
+	bottom: -3px;
+}
+#login_btn:hover,#signup_btn:hover{
+    background-color:#49abfe;
+    color:white;
+    cursor: pointer;
+}
+#login_btnform:hover,#signup_btnform:hover{
+	background-color:#ffaa4f;
+	color:white;
+	cursor: pointer;
+}
+#forgot:hover{
+	color: #adb9d1;
+	cursor: pointer;
+}
+#signup_msg{
+    font-family: 'Source Sans Pro';
+    font-size: 28px;
+    font-weight:300px;
+    color:white;
+    position: absolute;
+	letter-spacing: 0.56px;
+    line-height: 35px;
+    top: 75px;
+	left: 80px;
+	z-index: 1;
+}
+#underline1{
+	background-color: #49abfe;
+    width: 40px;
+    height: 2px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#signup_msg2{
+	font-family: 'Source Sans Pro';
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+	line-height: 35px;
+    text-align: left;
+	width: 275px;
+	height: 194px;
+	position: absolute;
+	top: 130px;
+	left: 80px;
+	margin-top: 25px;
+}
+#login_msg{
+    font-family: 'Source Sans Pro';
+    font-size: 28px;
+	font-weight:300px;
+    color:white;
+    position: absolute;
+	letter-spacing: 0.56px;
+    line-height: 35px;
+    top: 75px;
+	left: 561px;
+	z-index: 1;
+}
+#login_msg2{
+	font-family: 'Source Sans Pro';
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+	line-height: 35px;
+    text-align: left;
+	width: 277px;
+	height: 134px;
+	position: absolute;
+	top: 130px;
+	left: 561px;
+	margin-top: 25px;
+}
+#loginemail, #loginpass, #signupname, #signupemail, #signuppass{
+	font-family: 'Source Sans Pro';
+    color:  #8495b7;
+	width: 250px;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid #cbd2df;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    line-height: 45px;
+    text-align: left;	
+}
+#loginemail, #signupemail{
+	background-image: url("images/ic_mail.png");
+	background-repeat: no-repeat;
+	background-position: right; 
+}
+#loginpass, #signuppass{
+	background-image: url("images/ic_lock.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+#signupname{
+	background-image: url("images/ic_user.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+#loginemail:focus, #signupemail:focus{
+	background-image: url("images/ic_mailact.png");
+}
+#loginpass:focus, #signuppass:focus{
+	background-image: url("images/ic_lockact.png");
+}
+#signupname:focus{
+	background-image: url("images/ic_useract.png");
+}
+@media screen and (max-width: 600px) {
+    #box {
+        float: none;
+		width: 100%;
+    }
+	#main{
+		float: right;
+	    width: 70%;
+	}
+	#login_btn{
+		right: 50px;
+	}
+}
